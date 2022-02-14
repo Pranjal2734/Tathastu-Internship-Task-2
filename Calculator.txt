@@ -1,0 +1,35 @@
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    double r;
+		System.out.print("Enter First Number : ");
+		Scanner sc = new Scanner(System.in);
+		double n1 = sc.nextDouble();
+		System.out.print("Enter Second Number : ");
+		double n2 = sc.nextDouble();
+		System.out.print("Enter the operation(+,-,*,/) you want to perform : ");
+		char op = sc.next().charAt(0);
+		switch(op) {
+		    case '+':
+		        r = n1 + n2;
+		        System.out.print("Result of First Number + Second Number : "+r);
+		        break;
+		    case '-':
+		        r = n1 - n2;
+		        System.out.print("Result of First Number - Second Number : "+r);
+		        break;
+		    case '*':
+		        r = n1 * n2;
+		        System.out.print("Result of First Number * Second Number : "+r);
+		        break;
+		    case '/':
+		        r = n1 / n2;
+		        System.out.print("Result of First Number / Second Number : "+r);
+		        break;
+		    default:
+		     System.out.print("Invalid operator");
+		}
+	}
+}

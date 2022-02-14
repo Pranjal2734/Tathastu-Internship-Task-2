@@ -1,0 +1,21 @@
+import java.util.List; 
+import java.util.ArrayList; 
+  
+public class Main 
+{ 
+    public static void main(String[] args) 
+    { 
+        List<Integer> arr = new ArrayList<>(); 
+        arr.add(67); 
+        arr.add(53); 
+        arr.add(84); 
+        arr.add(1); 
+        arr.add(2); 
+  
+        arr.remove(new Integer(1)); 
+          
+        arr.remove(new Integer(2)); 
+  
+        System.out.println("After removing : " + arr); 
+    } 
+}

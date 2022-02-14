@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	 int a,b,c=0,count;
+	 System.out.print("Enter the number upto which calculation of fibonacci Series is done : ");
+	 Scanner sc = new Scanner(System.in);
+	 count = sc.nextInt();
+	 a=0;
+	 b=1;
+	 System.out.print("\n 0 1");
+	 for (int i=1;i<=count;i++){
+	 c=a+b; 
+	 System.out.print(" "+c);
+	 a=b;   
+	 b=c;  
+	
+	 }
+	 System.out.println("\n fibonacci series caculation is start from 0 & 1");
+	}
+}
